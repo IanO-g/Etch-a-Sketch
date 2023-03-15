@@ -7,10 +7,10 @@ let containerWidth = container.offsetWidth,
         let canvasNumber = (window.prompt('Choose the size of your canvas',''));
     if (isNaN(canvasNumber)){
         alert('please enter a number')
-        validInput()
+        return validInput()
     } else if (canvasNumber < 0 || canvasNumber>100){
         alert('please choose a number between 1 and 100')
-        validInput()
+        return validInput()
     } else {
         console.log(canvasNumber);
         return Number(canvasNumber);
@@ -45,13 +45,12 @@ production();
 
 
 function divDraw(e){
-  
-        e.target.style.backgroundColor = 'black';
+   e.target.style.backgroundColor = 'black' ;
 }
 
 const gridDivAll = document.querySelectorAll('.grid');
 
 gridDivAll.forEach(gridDiv => gridDiv.addEventListener(
-    'mouseover',divDraw))
+  'mouseover',divDraw))
 
 

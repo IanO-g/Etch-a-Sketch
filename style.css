@@ -1,8 +1,15 @@
+body{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    background-color: antiquewhite;
+}
+
 .container{
     width: 960px;
     height: 960px;
     display: grid;
-   
+    margin-top: 10px;
 }
 
 .grid{
@@ -10,5 +17,17 @@
     border-width: 1px;
     border-style: solid;
     margin:0px;
-   
+    background-color: white;
+}
+
+
+#canvasBtn{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 10px 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    border-radius: 5px;
+    background-color: white;
+
 }
